@@ -1,0 +1,12 @@
+{
+	"name": "Robot viewer",
+	"description": "Makes all robots.txt links clickable when viewing the webpage",
+	"version": "0.0.0.1",
+	"manifest_version": 2,
+	"content_scripts": [{
+		"matches": [
+            "*://*/robots.txt"
+        ],
+		"js": ["content.js"]
+    }]
+}
